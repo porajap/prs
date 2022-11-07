@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <group >
+        <item
+            android:id="@+id/btnOther"
+            android:icon="@drawable/ic_language"
+            android:title="@string/change_language" />
+
+        <item
+            android:id="@+id/btnCheckVersion"
+            android:icon="@drawable/ic_refresh"
+            android:title="@string/check_version" />
+
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/btnLogout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/text_logout"
+            app:showAsAction="never" />
+    </group>
+
+</menu>

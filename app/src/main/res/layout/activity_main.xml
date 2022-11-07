@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/custom_top_bar_main" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-30dp"
+                android:orientation="vertical"
+                android:paddingStart="35dp"
+                android:paddingBottom="10dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_text_home"
+                    android:textColor="#000000"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingEnd="15dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_hospital" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cus_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:text="@tools:sample/lorem/random" />
+
+                        <TextView
+                            android:id="@+id/cus_permission"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/colorGray"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:text="@tools:sample/lorem/random" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <ScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="50dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:weightSum="2">
+
+                        <!-- maintenance-->
+                        <RelativeLayout
+                            android:id="@+id/button_menu_maintenance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/menu_height"
+                            android:layout_marginStart="@dimen/margin_start_card_menu"
+                            android:layout_marginEnd="@dimen/margin_card_end_menu"
+                            android:layout_marginBottom="@dimen/margin_card_bottom"
+                            android:layout_weight="1"
+                            android:background="@drawable/menu_background">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:paddingVertical="10dp">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/size_margin_menu" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/menu_icon_maintenance_state" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/size_margin_menu" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/menu_maintenance"
+                                    android:textColor="@drawable/menu_text_state_color"
+                                    android:textSize="@dimen/size_menu"
+                                    android:textStyle="bold" />
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </RelativeLayout>
+
+                        <!-- check status -->
+                        <RelativeLayout
+                            android:id="@+id/button_menu_check_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/menu_height"
+                            android:layout_marginStart="@dimen/margin_start_card_menu"
+                            android:layout_marginEnd="@dimen/margin_card_end_menu"
+                            android:layout_marginBottom="@dimen/margin_card_bottom"
+                            android:layout_weight="1"
+                            android:background="@drawable/menu_background">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:paddingVertical="10dp">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/size_margin_menu" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/menu_icon_check_status_state" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/size_margin_menu" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/menu_check_status"
+                                    android:textColor="@drawable/menu_text_state_color"
+                                    android:textSize="@dimen/size_menu"
+                                    android:textStyle="bold" />
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </RelativeLayout>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:weightSum="2">
+
+                        <!-- Q&A-->
+                        <RelativeLayout
+                            android:id="@+id/button_menu_q_a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/menu_height"
+                            android:layout_marginStart="@dimen/margin_start_card_menu"
+                            android:layout_marginEnd="@dimen/margin_card_end_menu"
+                            android:layout_weight="1"
+                            android:background="@drawable/menu_background">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:paddingVertical="10dp">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/size_margin_menu" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/menu_icon_question_state" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/size_margin_menu" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/menu_suggestion"
+                                    android:textAlignment="center"
+                                    android:textColor="@drawable/menu_text_state_color"
+                                    android:textSize="@dimen/size_menu"
+                                    android:textStyle="bold" />
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/menu_height"
+                            android:layout_marginStart="@dimen/margin_start_card_menu"
+                            android:layout_marginEnd="@dimen/margin_card_end_menu"
+                            android:layout_marginBottom="@dimen/margin_card_bottom"
+                            android:layout_weight="1"
+                            android:background="@drawable/title_success_background"
+                            android:visibility="invisible">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="vertical"
+                                android:paddingTop="10dp">
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </ScrollView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabUserApprove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_person_add"
+        android:tint="@color/colorWhile"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="normal" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

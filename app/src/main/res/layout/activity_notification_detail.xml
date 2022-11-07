@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_root_page"
+    android:orientation="vertical"
+    tools:context=".NotificationDetailActivity">
+
+
+    <include layout="@layout/custom_top_bar" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:background="@drawable/ic_check_status_background">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="25dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="10dp">
+
+                <!-- Machine -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_status_text_machine"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textMachine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap"
+                        tools:text="@tools:sample/us_zipcodes" />
+
+                </RelativeLayout>
+                <!-- end Machine -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <!-- Position -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_status_text_position"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap"
+                        tools:text="ตึก A ชั้น 1 ห้อง ผ่าตัด" />
+
+                </RelativeLayout>
+                <!-- end Position -->
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingHorizontal="10dp">
+
+                <!-- image request -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgRequest"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_request" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <!-- end image request -->
+
+                <!-- line 1 -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="70dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="-25dp"
+                    android:layout_marginEnd="-40dp"
+                    android:src="@drawable/ic_dash_horizontal" />
+                <!-- end line 1 -->
+
+                <!-- image receive -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgReceive"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_receive_w" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <!-- end image receive -->
+
+                <!-- line 2 -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="70dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="-25dp"
+                    android:layout_marginEnd="-40dp"
+                    android:src="@drawable/ic_dash_horizontal" />
+                <!-- end line 2 -->
+
+                <!-- image repair -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgRepair"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_repair_w" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <!-- end image repair -->
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="15dp">
+
+                <!-- detail Request -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp">
+
+                        <TextView
+                            android:id="@+id/textRequest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/label_check_status_blue_background"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="2dp"
+                            android:text="@string/check_status_text_request"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignEnd="@+id/textRequest"
+                            android:src="@drawable/ic_success_status" />
+
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:id="@+id/dateRequest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/check_status_detail_date_time"
+                        android:textStyle="bold"
+                        tools:text="02/07/2020" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+
+                    <TextView
+                        android:id="@+id/timeRequest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/check_status_detail_date_time"
+                        android:textStyle="bold"
+                        tools:text="เวลา 09:30 น." />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <!-- end detail Request -->
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent" />
+
+                <!-- detail Receive -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/labelReceive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="2dp"
+                            android:text="@string/check_status_text_receive"
+                            android:textColor="@color/colorGray"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/icSuccessReceive"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignEnd="@+id/labelReceive"
+                            android:src="@drawable/ic_success_status"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:id="@+id/dateReceive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/check_status_detail_date_time"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        tools:text="02/07/2020" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+
+                    <TextView
+                        android:id="@+id/timeReceive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/check_status_detail_date_time"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        tools:text="เวลา 09:30 น." />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <!-- end detail Receive -->
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent" />
+
+                <!-- detail Repair -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/labelRepair"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="2dp"
+                            android:text="@string/check_status_text_repair"
+                            android:textColor="@color/colorGray"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/icSuccessRepair"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignEnd="@+id/labelRepair"
+                            android:src="@drawable/ic_success_status"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:id="@+id/dateRepair"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/check_status_detail_date_time"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        tools:text="02/07/2020" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+
+                    <TextView
+                        android:id="@+id/timeRepair"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/check_status_detail_date_time"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        tools:text="เวลา 09:30 น." />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <!-- end detail Repair -->
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

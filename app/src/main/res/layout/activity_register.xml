@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    android:background="@color/background_root_page"
+    tools:context=".RegisterActivity">
+
+    <include layout="@layout/custom_top_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="150dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_primary_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_register" />
+
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_description"
+                        android:textColor="@color/in_page_description_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardPreventCornerOverlap="false">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/formLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="15dp"
+                    android:paddingBottom="20dp">
+
+                    <!--username-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/username"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/maintenance_label" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_second_background"
+                            android:imeOptions="actionGo"
+                            android:maxLines="1"
+                            android:paddingHorizontal="@dimen/maintenance_padding_horizontal_edittext"
+                            android:paddingVertical="@dimen/padding_edittext_install"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/input_size_install"
+                            android:textStyle="bold"
+                            tools:text="@tools:sample/first_names" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <!--end ID-->
+
+                    <!--password-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_top_input_maintenance" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/register_password"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/maintenance_label" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_second_background"
+                            android:imeOptions="actionGo"
+                            android:maxLines="1"
+                            android:inputType="textPassword"
+                            android:paddingHorizontal="@dimen/maintenance_padding_horizontal_edittext"
+                            android:paddingVertical="@dimen/padding_edittext_install"
+                            android:singleLine="true"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/input_size_install"
+                            tools:text="@tools:sample/us_zipcodes" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <!--end password-->
+
+                    <!--customerName-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_top_input_maintenance" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/register_name"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/maintenance_label" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/customerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_second_background"
+                            android:imeOptions="actionGo"
+                            android:maxLines="1"
+                            android:paddingHorizontal="@dimen/maintenance_padding_horizontal_edittext"
+                            android:paddingVertical="@dimen/padding_edittext_install"
+                            android:singleLine="true"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/input_size_install"
+                            tools:text="@tools:sample/full_names" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <!--end customerName-->
+
+                    <!--customer-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_top_input_maintenance" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/register_customer"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/maintenance_label" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_white_background">
+
+                            <TextView
+                                android:id="@+id/customerSelect"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_second_background"
+                                android:maxLines="1"
+                                android:paddingHorizontal="@dimen/maintenance_padding_horizontal_edittext"
+                                android:paddingVertical="@dimen/padding_edittext_install"
+                                android:text="@string/register_please_select_customer"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/input_size_install"
+                                app:drawableEndCompat="@drawable/ic_down" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <!--end customer-->
+
+                    <!--dep-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_top_input_maintenance" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/register_department"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/maintenance_label" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_white_background">
+
+                            <TextView
+                                android:id="@+id/departmentSelect"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_second_background"
+                                android:maxLines="1"
+                                android:paddingHorizontal="@dimen/maintenance_padding_horizontal_edittext"
+                                android:paddingVertical="@dimen/padding_edittext_install"
+                                android:text="@string/register_please_select_department"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/input_size_install"
+                                app:drawableEndCompat="@drawable/ic_down" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <!--end dep-->
+
+                    <!--Button-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnSubmit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_login_background"
+                            android:text="@string/register_save"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <!--end Button-->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

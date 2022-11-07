@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#FFFFFF"
+    tools:showIn="@layout/activity_main">
+
+
+    <RelativeLayout
+        android:id="@+id/backgroundMain"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/home_background"
+        android:orientation="vertical"
+        android:paddingVertical="10dp">
+
+        <!-- notification and logout -->
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:paddingEnd="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/buttonNotification"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/notification_state_color"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/icBell"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_bell" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/textNotification"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="-12dp"
+                        android:layout_marginTop="-8dp"
+                        android:layout_toEndOf="@+id/icBell"
+                        android:background="@drawable/circle_red"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        tools:text="99+" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btnMenu"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/notification_state_color"
+                    android:src="@drawable/ic_menu" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+        <!-- Pose health title-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutTop">
+
+            <View
+                android:id="@+id/centerLayout"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/centerLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/menu_text_pose_health_care"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/menu_title"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+        <!-- image light -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/hintIconLeft"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_home_1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/hintIconLeft"
+            android:src="@drawable/ic_home_2" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/layoutTop"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_home_3" />
+        <!-- end image light -->
+
+    </RelativeLayout>
+
+
+</merge>

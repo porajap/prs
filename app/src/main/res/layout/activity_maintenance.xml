@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_root_page"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    tools:context=".MaintenanceActivity">
+
+    <include layout="@layout/custom_top_bar" />
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="90dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_primary_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_maintenance" />
+
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_maintenance"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/size_top_title_all_activity"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/maintenance_description"
+                        android:textColor="@color/in_page_description_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardPreventCornerOverlap="false">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/formLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/install_detail"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <!--ID-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/maintenance_id_machine"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/maintenance_label" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/id_machine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_second_background"
+                            android:enabled="false"
+                            android:imeOptions="actionGo"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:paddingHorizontal="@dimen/maintenance_padding_horizontal_edittext"
+                            android:paddingVertical="@dimen/padding_edittext_install"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/input_size_install"
+                            android:textStyle="bold"
+                            tools:text="@tools:sample/us_zipcodes" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <!--end ID-->
+
+                    <!--dep-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_top_input_maintenance" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/maintenance_building"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/maintenance_label" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/buildingName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_second_background"
+                            android:enabled="false"
+                            android:imeOptions="actionGo"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:paddingHorizontal="@dimen/maintenance_padding_horizontal_edittext"
+                            android:paddingVertical="@dimen/padding_edittext_install"
+                            android:singleLine="true"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/input_size_install"
+                            tools:text="@tools:sample/lorem/random" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <!--end dep-->
+
+                    <!--floor-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_top_input_maintenance" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/install_floor"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/maintenance_label" />
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/floor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edittext_second_background"
+                                    android:enabled="false"
+                                    android:imeOptions="actionGo"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:paddingHorizontal="@dimen/maintenance_padding_horizontal_edittext"
+                                    android:paddingVertical="@dimen/padding_edittext_install"
+                                    android:singleLine="true"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="@dimen/input_size_install"
+                                    tools:text="5" />
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <View
+                                android:layout_width="5dp"
+                                android:layout_height="match_parent" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/maintenance_room"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/maintenance_label" />
+
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/room"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edittext_second_background"
+                                    android:enabled="false"
+                                    android:imeOptions="actionGo"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:paddingHorizontal="@dimen/maintenance_padding_horizontal_edittext"
+                                    android:paddingVertical="@dimen/padding_edittext_install"
+                                    android:singleLine="true"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="@dimen/input_size_install"
+                                    tools:text="@tools:sample/lorem/random" />
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <!--end floor-->
+
+
+                    <!--problem-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_top_input_maintenance" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/maintenance_problem"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/maintenance_label" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_white_background">
+
+                            <TextView
+                                android:id="@+id/problemSelect"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_problem_background"
+                                android:maxLines="1"
+                                android:paddingHorizontal="@dimen/maintenance_padding_horizontal_edittext"
+                                android:paddingVertical="@dimen/padding_edittext_install"
+                                android:text="@string/maintenance_please_select_problem"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/input_size_install"
+                                app:drawableEndCompat="@drawable/ic_down" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <!--end problem-->
+
+                    <!--problem-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_top_input_maintenance" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/maintenance_note"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/maintenance_label" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                        <TextView
+                            android:id="@+id/note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_second_background"
+                            android:hint="@string/maintenance_note_detail"
+                            android:maxLines="1"
+                            android:paddingHorizontal="@dimen/maintenance_padding_horizontal_edittext"
+                            android:paddingVertical="@dimen/padding_edittext_install"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textSize="@dimen/input_size_install" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <!--end problem-->
+
+                    <!--Button-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_login_background"
+                            android:text="@string/maintenance_save"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <!--end Button-->
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

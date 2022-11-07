@@ -1,0 +1,185 @@
+<resources>
+    <string name="app_name">Pose Service</string>
+
+    <!-- Login -->
+    <string name="label_username_login">Username</string>
+    <string name="label_password_login">Password</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="remember_me">Remember</string>
+    <string name="forgot_password">Forgot your password?&#160;&#160;</string>
+    <string name="sign_in">Login</string>
+    <string name="login_failed">Invalid username or password!</string>
+    <string name="create_by">Created by POSE INTELLIGENCE</string>
+    <!-- Login -->
+
+    <!-- Menu -->
+    <string name="menu_maintenance_description">Repair problem list. \ n Using the machine \ n There was an error.</string>
+    <string name="menu_maintenance">Maintenance</string>
+    <string name="install">Install</string>
+    <string name="menu_install_description">Appoint a technician to install it. \ n Move the uninstall point</string>
+    <string name="menu_check_status">Check status</string>
+    <string name="menu_q_a">Suggestions</string>
+    <string name="menu_q_a_description">Ask and suggestion</string>
+    <string name="menu_check_status_description">Check status. \ n Repair notification</string>
+    <string name="menu_report_description">Report</string>
+    <string name="menu_report">Report</string>
+    <string name="menu_text_menu">Menu</string>
+    <string name="menu_suggestion">Suggestions</string>
+    <string name="menu_text_home">MENU</string>
+    <string name="menu_title">Dispenser Service Application</string>
+    <string name="menu_welcome">Welcome</string>
+    <string name="menu_text_pose_health_care">Pose Health Care</string>
+    <!-- Menu -->
+
+    <!-- install -->
+    <string name="install_install">Install</string>
+    <string name="install_setting">Reinstall</string>
+    <string name="install_move">Move point</string>
+    <string name="install_uninstall">uninstall</string>
+    <string name="install_time">Time:</string>
+    <string name="install_date">Date:</string>
+    <string name="install_floor">Floor:</string>
+    <string name="install_department">Department:</string>
+    <string name="install_number">Number:</string>
+    <string name="install_hospital">Hospital:</string>
+    <string name="install_detail">Description</string>
+    <string name="install_save">Submit request</string>
+    <string name="install_select_dep">Select department</string>
+    <string name="install_please_key_data">Please complete all information</string>
+    <string name="install_contact">Contact</string>
+    <string name="install_send_failed">Request failed. Please try again later.</string>
+    <string name="install_send_success">Successfully submitted request</string>
+    <!-- install  -->
+
+    <!-- check status && notification  -->
+    <string name="check_status">Check Status</string>
+    <string name="check_status_text_request">Request</string>
+    <string name="check_status_text_receive">Receive</string>
+    <string name="check_status_text_repair">Repair</string>
+    <string name="check_status_text_machine">MACHINE</string>
+    <string name="check_status_text_position">Location</string>
+    <string name="notification_text_notification">Notification</string>
+    <string name="notification_text_detail">Details</string>
+    <!-- check status && notification  -->
+
+    <!-- question  -->
+    <string name="question_hint">Fill out Comment Suggestions.</string>
+    <string name="question_send">Send feedback</string>
+    <string name="question_history">History</string>
+    <string name="question_send_success">Send feedback. The suggestion was successful.</string>
+    <!-- question  -->
+
+    <!-- tab name -->
+    <string name="tab_text_1">All</string>
+    <string name="tab_text_2">Request</string>
+    <string name="tab_text_3">Receive</string>
+    <string name="tab_text_4">Repair</string>
+    <!-- tab name -->
+
+    <!-- maintenance && barcode-->
+    <string name="barcode_scan_barcode">Scan Barcode</string>
+    <string name="barcode_found">Barcode not found</string>
+    <string name="maintenance_id_machine">Serial number:</string>
+    <string name="maintenance_note">Note:</string>
+    <string name="maintenance_save">SUBMIT</string>
+    <string name="maintenance_note_detail">Enter note</string>
+    <string name="maintenance_send_success">Problem reported Successfully</string>
+    <string name="maintenance_send_failed">There was an error submitting. Please try again later.</string>
+    <string name="maintenance_problem">Problem:</string>
+    <string name="maintenance_room">Room:</string>
+    <string name="maintenance_building">Building:</string>
+    <string name="maintenance_please_select_problem">Please select a problem</string>
+    <string name="maintenance_description">Report a problem or an error with the device.</string>
+    <!-- maintenance && barcode-->
+
+
+    <!-- day -->
+    <string name="monday">Mon.</string>
+    <string name="tuesday">Tue.</string>
+    <string name="wednesday">Wed.</string>
+    <string name="thursday">Thu.</string>
+    <string name="friday">Fri.</string>
+    <string name="saturday">Sat.</string>
+    <string name="sunday">Sun.</string>
+    <string name="hour_ago">Hour ago</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="time">Time :</string>
+    <string name="date">Date :</string>
+    <string name="please_enter_note">Please enter note</string>
+    <!-- day -->
+
+
+    <!--check version-->
+    <string name="version">Version  :</string>
+    <string name="last_version">Last version :</string>
+    <string name="check_update">Check update</string>
+    <string name="check_version">Check version</string>
+    <string name="checking">Checking</string>
+    <string name="later">Later</string>
+    <string name="text_update">Update</string>
+    <string name="dialog_text_start">&#160;is now available (you have&#160;</string>
+    <string name="dialog_text_end">) Would you like to update the new version now?</string>
+    <string name="now_last_version">Your version is latest.</string>
+    <string name="loading">Loading please wait…</string>
+    <!--check version-->
+
+
+    <!--register -->
+    <string name="menu_register">Register</string>
+    <string name="register_username">Username:</string>
+    <string name="register_password">Password:</string>
+    <string name="register_permission">Permission:</string>
+    <string name="register_please_select_permission">Please select a permission</string>
+    <string name="register_please_select_department">Please select a department</string>
+    <string name="register_name">First name - Last name:</string>
+    <string name="register_department">Department:</string>
+    <string name="register_please_key_data">Please complete all information</string>
+    <string name="register_submit_success">Successfully registered. Please wait for admin approve.</string>
+    <string name="register_submit_failed">Register failed. Please try again</string>
+    <string name="register_submit_already">Username already exists</string>
+    <string name="register_description">Register to access the system</string>
+    <string name="approve">Approve</string>
+    <string name="register_dialog_confirm">Do you want to approve this user?</string>
+    <string name="register_approve_success">Successfully approved.</string>
+    <string name="register_approve_failed">Approve failed. Please try again</string>
+    <string name="register_dialog_cancel">Do you want to delete this user?</string>
+    <string name="register_cancel_success">Successfully deleted</string>
+    <string name="register_cancel_failed">Delete failed. Please try again</string>
+    <string name="register_customer">Organization name:</string>
+    <string name="register_please_select_customer">Please select a organization name</string>
+    <string name="register_password_failed">Password must be 4 characters or more.</string>
+    <string name="register_save">SUBMIT</string>
+    <!--register -->
+
+
+    <!--other-->
+    <string name="text_data_not_found">Data not found</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="are_you_want_to_delete">Do you have to delete the entry?</string>
+    <string name="logout">Do you want to log out?</string>
+    <string name="delete_item_success">Successfully deleted item</string>
+    <string name="username_password_incorrect">Username or Password is invalid!</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="check_your_network">Please check your internet connection</string>
+    <string name="show_failed_in_dialog">An error has occurred. Please try again later.</string>
+    <string name="text_please_select">Please select</string>
+    <string name="text_logout">Logout</string>
+    <string name="text_building">Building</string>
+    <string name="text_floor">Floor</string>
+    <string name="text_room">Room</string>
+    <string name="text_time">Time</string>
+    <string name="language">Change language</string>
+    <string name="text_english">English</string>
+    <string name="text_thai">Thai</string>
+    <string name="change_language">Change Language</string>
+    <string name="you_sure_change_language">Do you want to change language?</string>
+    <string name="text_next">Next</string>
+    <string name="or">or</string>
+    <string name="register">Register</string>
+    <string name="search">Search</string>
+    <!--other-->
+
+
+</resources>

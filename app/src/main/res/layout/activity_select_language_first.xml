@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectLanguageFirstActivity">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="90dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <!-- top image -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:src="@drawable/ic_talk" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <!-- english -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/btnEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/width_ic_language_circle"
+                    android:layout_height="@dimen/height_ic_language_circle"
+                    android:src="@drawable/ic_eng_circle" />
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textEng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_english"
+                    android:textColor="@color/text_language_state_color_white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icCheckEng"
+                    android:layout_width="@dimen/width_ic_check_language"
+                    android:layout_height="@dimen/height_ic_check_language"
+                    android:src="@drawable/ic_check" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!-- thai -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/btnThai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_blue_border_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/width_ic_language_circle"
+                    android:layout_height="@dimen/height_ic_language_circle"
+                    android:src="@drawable/ic_thai_circle" />
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textThai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_thai"
+                    android:textColor="@color/text_language_state_color_black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icCheckTh"
+                    android:layout_width="@dimen/width_ic_check_language"
+                    android:layout_height="@dimen/height_ic_check_language"
+                    android:src="@drawable/ic_check"
+                    android:visibility="invisible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <!-- button next -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNext"
+                android:layout_gravity="end"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAlignment="textEnd"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textAllCaps="false"
+                android:drawableEnd="@drawable/ic_next_black"
+                android:drawablePadding="10dp"
+                android:text="@string/text_next"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

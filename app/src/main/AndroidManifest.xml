@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.phc.prs">
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ApproveActivity" />
+        <activity
+            android:name=".Extensions.CustomSpinnerSearchActivity"
+            android:theme="@style/myDialog" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".CheckVersionActivity" />
+        <activity
+            android:name=".SelectLanguageFirstActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ChangeLanguageActivity" />
+        <activity
+            android:name=".Extensions.CustomSpinnerActivity"
+            android:theme="@style/myDialog" />
+        <activity android:name=".NotificationDetailActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NotificationsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MaintenanceActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".CameraBarcodeActivity" />
+        <activity
+            android:name=".CheckStatusActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".HistoryQuestionActivity" />
+        <activity android:name=".QuestionActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/MainStyle" />
+        <activity
+            android:name=".InstallActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,181 @@
+<resources>
+    <string name="app_name">Pose Service</string>
+
+    <!-- Login -->
+    <string name="label_username_login">ชื่อผู้ใช้งาน</string>
+    <string name="label_password_login">รหัสผ่าน</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="username">ชื่อผู้ใช้</string>
+    <string name="remember_me">จดจำ</string>
+    <string name="forgot_password">ลืมรหัสผ่าน?&#160;&#160;</string>
+    <string name="sign_in">เข้าสู่ระบบ</string>
+    <string name="login_failed">ชื่อผู้ใช้งานหรือรหัสผ่านไม่ถูกต้อง!</string>
+    <string name="create_by">Created by POSE INTELLIGENCE</string>
+    <!-- Login -->
+
+    <!-- Menu -->
+    <string name="menu_maintenance_description">แจ้งซ่อมรายการปัญหา \nการใช้เครื่อง \nมีอาการผิดพลาด</string>
+    <string name="menu_maintenance">ซ่อมบำรุง</string>
+    <string name="install">ติดตั้ง</string>
+    <string name="menu_install_description">แจ้งนัดช่างเพื่อติดตั้งเพิ่ม \nย้ายจุด ถอนการติดตั้ง</string>
+    <string name="menu_check_status">ตรวจสอบสถานะ</string>
+    <string name="menu_q_a">ข้อเสนอแนะ</string>
+    <string name="menu_q_a_description">สอบถามและข้อเสนอแนะ</string>
+    <string name="menu_check_status_description">ตรวจสอบสถานะ \nการแจ้งซ่อม</string>
+    <string name="menu_report_description">รายงาน</string>
+    <string name="menu_report">รายงาน</string>
+    <string name="menu_text_menu">เมนู</string>
+    <string name="menu_suggestion">ข้อเสนอแนะเพิ่มเติม</string>
+    <string name="menu_text_home">เมนู</string>
+    <string name="menu_title">Dispenser Service Application</string>
+    <string name="menu_welcome">ยินดีต้อนรับ</string>
+    <string name="menu_text_pose_health_care">Pose Health Care</string>
+    <!-- Menu -->
+
+    <!-- install -->
+    <string name="install_install">ติดตั้ง</string>
+    <string name="install_setting">ติดตั้งเพิ่ม</string>
+    <string name="install_move">ย้ายจุด</string>
+    <string name="install_uninstall">ถอนการติดตั้ง</string>
+    <string name="install_time">เวลา :</string>
+    <string name="install_date">วันที่ :</string>
+    <string name="install_floor">ชั้น :</string>
+    <string name="install_department">แผนก :</string>
+    <string name="install_number">จำนวน :</string>
+    <string name="install_hospital">โรงพยาบาล :</string>
+    <string name="install_detail">รายละเอียด</string>
+    <string name="install_save">ส่งคำร้อง</string>
+    <string name="install_select_dep">เลือกแผนก</string>
+    <string name="install_please_key_data">กรุณากรอกข้อมูลให้ครบถ้วน</string>
+    <string name="install_contact">ติดต่อ</string>
+    <string name="install_send_failed">ส่งคำร้องไม่สำเร็จ กรุณาลองใหม่ภายหลัง</string>
+    <string name="install_send_success">ส่งคำร้องสำเร็จ</string>
+    <!-- install  -->
+
+    <!-- check status && notification  -->
+    <string name="check_status">ตรวจสอบสถานะ</string>
+    <string name="check_status_text_request">ร้องขอ</string>
+    <string name="check_status_text_receive">ตอบรับ</string>
+    <string name="check_status_text_repair">ซ่อม/แก้ไข</string>
+    <string name="check_status_text_machine">เครื่อง</string>
+    <string name="check_status_text_position">ตำแหน่ง</string>
+    <string name="notification_text_notification">แจ้งเตือน</string>
+    <string name="notification_text_detail">รายละเอียด</string>
+    <!-- check status && notification  -->
+
+    <!-- question  -->
+    <string name="question_hint">กรอกความคิดเห็น ข้อเสนอแนะ</string>
+    <string name="question_send">ส่งความคิดเห็น</string>
+    <string name="question_history">ประวัติ</string>
+    <string name="question_send_success">ส่งความคิดเห็น ข้อเสนอแนะสำเร็จ</string>
+    <!-- question  -->
+
+    <!-- tab name -->
+    <string name="tab_text_1">ทั้งหมด</string>
+    <string name="tab_text_2">ร้องขอ</string>
+    <string name="tab_text_3">ตอบรับ</string>
+    <string name="tab_text_4">ซ่อม/แก้ไข</string>
+    <!-- tab name -->
+
+    <!-- Maintanence && barcode-->
+    <string name="barcode_scan_barcode">สแกนบาร์โค้ด</string>
+    <string name="barcode_found">ไม่พบบาร์โค้ด</string>
+    <string name="maintenance_id_machine">เลขเครื่อง :</string>
+    <string name="maintenance_note">หมายเหตุ :</string>
+    <string name="maintenance_save">ส่งการแจ้งซ่อม</string>
+    <string name="maintenance_note_detail">กรอกหมายเหตุ</string>
+    <string name="maintenance_send_success">ส่งปัญหาสำเร็จ</string>
+    <string name="maintenance_send_failed">มีข้อผิดพลาดในการส่ง กรุณาลองใหม่ภายหลัง</string>
+    <string name="maintenance_problem">ปัญหาที่พบ :</string>
+    <string name="maintenance_room">ห้อง :</string>
+    <string name="maintenance_building">ตึก :</string>
+    <string name="maintenance_please_select_problem">กรุณาเลือกปัญหา</string>
+    <string name="maintenance_description">แจ้งซ่อมรายการปัญหา การใช้เครื่อง มีอาการผิดพลาด</string>
+    <!-- Maintanence && barcode-->
+
+
+    <!-- day -->
+    <string name="monday">จ.</string>
+    <string name="tuesday">อ.</string>
+    <string name="wednesday">พ.</string>
+    <string name="thursday">พฤ.</string>
+    <string name="friday">ศ.</string>
+    <string name="saturday">ส.</string>
+    <string name="sunday">อา.</string>
+    <string name="hour_ago">ชม. ที่แล้ว</string>
+    <string name="yesterday">เมื่อวาน</string>
+    <string name="time">เวลา :</string>
+    <string name="date">วันที่ : </string>
+    <string name="please_enter_note">กรุณากรอกหมายเหตุ</string>
+    <!-- -->
+
+    <!--check version-->
+    <string name="version">เวอร์ชั่น :</string>
+    <string name="last_version">เวอร์ชั่นปัจจุบัน :</string>
+    <string name="check_update">Check update</string>
+    <string name="check_version">ตรวจสอบเวอร์ชั่น</string>
+    <string name="checking">กำลังตรวจสอบ</string>
+    <string name="text_update">อัพเดท</string>
+    <string name="later">ภายหลัง</string>
+    <string name="dialog_text_start">&#160;พร้อมใช้งานแล้ว (คุณมี&#160;</string>
+    <string name="dialog_text_end">) คุณต้องการอัปเดตเวอร์ชันใหม่เดี๋ยวนี้หรือไม่?</string>
+    <string name="now_last_version">แอปพลิเคชันของคุณเป็นเป็นเวอร์ชั่นล่าสุด</string>
+    <string name="loading">กำลังโหลด กรุณารอสักครู่…</string>
+    <!--check version-->
+
+    <!--register -->
+    <string name="menu_register">ลงทะเบียน</string>
+    <string name="register_username">ชื่อผู้ใช้:</string>
+    <string name="register_password">รหัสผ่าน:</string>
+    <string name="register_permission">สิทธิ์การใช้งาน:</string>
+    <string name="register_please_select_permission">กรุณาเลือกสิทธิ์</string>
+    <string name="register_please_select_department">กรุณาเลือกแผนก</string>
+    <string name="register_name">ชื่อ - นามสกุล:</string>
+    <string name="register_department">แผนก:</string>
+    <string name="register_please_key_data">กรุณากรอกข้อมูลให้ครบถ้วน</string>
+    <string name="register_submit_success">ลงทะเบียนสำเร็จ กรุณารอการอนุมัติจากเจ้าหน้าที่</string>
+    <string name="register_submit_failed">ลงทะเบียนไม่สำเร็จ กรุณาลองใหม่</string>
+    <string name="register_submit_already">มีข้อมูลผู้ใช้งานนี้ในระบบแล้ว</string>
+    <string name="register_description">ลงทะเบียนเพื่อเข้าใช้งานระบบ</string>
+    <string name="approve">อนุมัติ</string>
+    <string name="register_dialog_confirm">คุณต้องการอนุมัติผู้ใช้งานนี้ใช่หรือไม่?</string>
+    <string name="register_approve_success">อนุมัติสำเร็จ</string>
+    <string name="register_approve_failed">อนุมัติไม่สำเร็จ กรุณาลองใหม่</string>
+    <string name="register_dialog_cancel">คุณต้องการลบผู้ใช้งานนี้ใช่หรือไม่?</string>
+    <string name="register_cancel_success">ลบผู้ใช้งานสำเร็จ</string>
+    <string name="register_cancel_failed">ลบไม่สำเร็จ กรุณาลองใหม่</string>
+    <string name="register_customer">ชื่อสถานประกอบการ:</string>
+    <string name="register_please_select_customer">กรุณาเลือกสถานประกอบการ</string>
+    <string name="register_password_failed">รหัสผ่านต้อง 4 ตัวอักษรขึ้นไป</string>
+    <string name="register_save">เสร็จสิ้น</string>
+    <!--register -->
+
+    <!--other-->
+    <string name="text_data_not_found">ไม่พบข้อมูล</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="ok">ตกลง</string>
+    <string name="are_you_want_to_delete">คุณต้องลบรายการใช่หรือไม่</string>
+    <string name="logout">คุณต้องการออกจากระบบใช่หรือไม่?</string>
+    <string name="delete_item_success">ลบรายการสำเร็จ</string>
+    <string name="username_password_incorrect">ชื่อผู้ใช้งานหรือรหัสผ่านไม่ถูกต้อง!</string>
+    <string name="welcome_back">ยินดีต้อนรับ</string>
+    <string name="check_your_network">กรุณาเช็คการเชื่อมต่ออินเทอร์เน็ตของคุณ</string>
+    <string name="show_failed_in_dialog">มีข้อผิดพลาดเกิดขึ้น กรุณาลองใหม่ภายหลัง</string>
+    <string name="text_please_select">กรุณาเลือก</string>
+    <string name="text_logout">ออกจากระบบบ</string>
+    <string name="text_building">ตึก</string>
+    <string name="text_floor">ชั้น</string>
+    <string name="text_room">ห้อง</string>
+    <string name="text_time">เวลา</string>
+    <string name="language">ภาษา</string>
+    <string name="text_english">อังกฤษ</string>
+    <string name="text_thai">ไทย</string>
+    <string name="change_language">เปลี่ยนภาษา</string>
+    <string name="you_sure_change_language">คุณต้องการเปลี่ยนภาษาใช่หรือไม่?</string>
+    <string name="text_next">ถัดไป</string>
+    <string name="or">หรือ</string>
+    <string name="register">ลงทะเบียน</string>
+    <string name="search">ค้นหา</string>
+    <!--other-->
+
+</resources>

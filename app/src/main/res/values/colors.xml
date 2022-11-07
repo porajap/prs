@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#44baf1</color>
+    <color name="colorPrimaryDark">#4066ea</color>
+    <color name="colorAccent">#000000</color>
+    <color name="in_page_description_color">#ECE8E8</color>
+    <color name="background_root_page">#eff3fb</color>
+    <color name="colorGray">#898989</color>
+    <color name="colorDetailCheckStatus">#000000</color>
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorDarkGreen">#127816</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorNewNotification">#f0fafe</color>
+    <color name="colorWhile">#ffffff</color>
+    <color name="colorNotificationSelect">#E4E3E3</color>
+    <color name="colorLightBlack">#474747</color>
+    <color name="colorRedDark">#BD1C10</color>
+    <color name="colorLineGray">#EAE6E6</color>
+</resources>
