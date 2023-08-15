@@ -4,7 +4,7 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.phc.prs"
+        applicationId "com.phc.poseint.prs"
         minSdkVersion 23
         targetSdkVersion 33
         versionCode 11
